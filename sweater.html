@@ -1,145 +1,79 @@
-body{
-margin:0;
-font-family:Arial;
-background:linear-gradient(135deg,#0f172a,#1e3a8a,#6366f1);
-color:white;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweaters</title>
 
-.navbar{
-background:white;
-padding:12px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:relative;
-}
+<link rel="stylesheet" href="style.css">
+</head>
 
-.nav-left{
-color:#e53238;
-font-weight:bold;
-font-size:18px;
-}
+<body>
 
-.nav-right{
-display:flex;
-align-items:center;
-gap:10px;
-}
+<div class="navbar">
 
-.nav-links{
-display:flex;
-gap:10px;
-}
+<div class="nav-left">
+Beyond The Limit
+</div>
 
-.nav-links a{
-text-decoration:none;
-color:#333;
-font-weight:bold;
-}
+<div class="nav-right">
 
-.nav-links a:hover{
-color:#6366f1;
-}
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-.menu-toggle{
-font-size:26px;
-cursor:pointer;
-color:#333;
-display:none;
-}
+<div class="nav-links" id="navLinks">
+<a href="index.html">Home</a>
+<a href="shorts.html">Shorts</a>
+<a href="jackets.html">Jackets</a>
+<a href="sweater.html">Sweaters</a>
+<a href="info.html">Info</a>
+</div>
 
-h1,h2{
-text-align:center;
-}
+</div>
 
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-padding:20px;
-}
+</div>
 
-.card{
-background:#3b82f6;
-padding:10px;
-border-radius:10px;
-text-align:center;
-}
+<h2>Sweaters</h2>
 
-.card img{
-width:100%;
-border-radius:10px;
-}
+<div class="products">
 
-select{
-width:100%;
-padding:5px;
-margin-top:5px;
-}
+<div class="card">
+<img src="https://down-id.img.susercontent.com/file/id-11134207-7r98t-ls1kpwpuw4dw0f">
+<p>Gray Sweater ₱650</p>
+<select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
 
-button{
-width:100%;
-padding:8px;
-margin-top:5px;
-border:none;
-cursor:pointer;
-background:#6366f1;
-color:white;
-}
+<div class="card">
+<img src="https://ih1.redbubble.net/image.5985402006.2582/ssrco,oversized_hoodie,womens_01,e8e6e1:aa8ffd9f0f,front,square_product,x600.jpg">
+<p>Classic Sweater ₱700</p>
+<select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
 
-button:hover{
-background:#4f46e5;
-}
+<div class="card">
+<img src="https://s.alicdn.com/@sc04/kf/H844c19b54f6d456e8541edc53234bcf4m/YZ-Men-s-Casual-Crew-Neck-Wool-Sweaters-for-Autumn-Winter-Direct-Factory-Supply-Customizable.png_300x300.jpg">
+<p>Winter Sweater ₱750</p>
+<select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+<button>Add to Cart</button>
+<button>Buy Now</button>
+</div>
 
-.cart{
-background:white;
-color:black;
-padding:15px;
-margin:20px;
-border-radius:10px;
-}
+</div>
 
-.info-box{
-background:rgba(255,255,255,0.9);
-color:black;
-padding:20px;
-border-radius:10px;
-max-width:800px;
-margin:20px auto;
-}
+<footer>
+© 2026 BEYOND THE LIMIT <br>
+contact us: beyondthelimit@gmail.com <br>
+Made in the Philippines <br>
+Owned by Josh Winlance Bulda
+</footer>
 
-footer{
-text-align:center;
-padding:20px;
-font-size:14px;
-color:white;
+<script>
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("show");
 }
+</script>
 
-.show{
-display:flex !important;
-flex-direction:column;
-}
-
-@media (max-width:768px){
-
-.menu-toggle{
-display:block;
-}
-
-.nav-links{
-display:none;
-flex-direction:column;
-background:white;
-position:absolute;
-top:60px;
-right:20px;
-width:160px;
-padding:10px;
-border-radius:10px;
-z-index:9999;
-}
-
-.nav-links a{
-margin:10px 0;
-}
-}
+</body>
+</html>
