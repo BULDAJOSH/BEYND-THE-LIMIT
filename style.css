@@ -11,6 +11,7 @@ padding:12px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
 .logo{
@@ -23,13 +24,18 @@ margin-left:10px;
 text-decoration:none;
 color:#333;
 font-weight:bold;
+transition:0.3s;
 }
 
 .nav-links a:hover{
 color:#6366f1;
+transform:scale(1.05);
 }
 
-/* PRODUCTS */
+h1,h2{
+text-align:center;
+}
+
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -40,8 +46,14 @@ padding:20px;
 .card{
 background:#3b82f6;
 padding:10px;
-border-radius:10px;
+border-radius:12px;
 text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card img{
@@ -53,6 +65,7 @@ select{
 width:100%;
 padding:5px;
 margin-top:5px;
+border-radius:5px;
 }
 
 button{
@@ -63,13 +76,34 @@ border:none;
 cursor:pointer;
 background:#6366f1;
 color:white;
+border-radius:5px;
+transition:0.3s;
 }
 
 button:hover{
 background:#4f46e5;
 }
 
-/* INFO BOX */
+.cart{
+background:white;
+color:black;
+padding:15px;
+margin:20px;
+border-radius:10px;
+}
+
+#notify{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#22c55e;
+color:white;
+padding:10px 15px;
+border-radius:8px;
+display:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
 .info-box{
 background:rgba(255,255,255,0.9);
 color:black;
@@ -77,16 +111,33 @@ padding:20px;
 border-radius:10px;
 max-width:800px;
 margin:20px auto;
+line-height:1.6;
 }
 
-/* HEADINGS */
-h1,h2{
-text-align:center;
+.chatbox{
+background:white;
+color:black;
+width:90%;
+max-width:600px;
+margin:20px auto;
+padding:15px;
+border-radius:10px;
 }
 
-/* FOOTER */
-footer{
-text-align:center;
-padding:20px;
-font-size:14px;
+.chat-messages{
+height:200px;
+overflow-y:auto;
+border:1px solid #ccc;
+padding:10px;
+margin-bottom:10px;
+}
+
+.chatbox input{
+width:80%;
+padding:8px;
+}
+
+.chatbox button{
+width:18%;
+}
 }
