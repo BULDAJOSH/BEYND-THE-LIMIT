@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Information</title>
+<title>Information - Beyond The Limit</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -11,6 +11,8 @@
 <body>
 
 <div class="navbar">
+<div class="logo">Beyond The Limit</div>
+
 <div class="nav-links">
 <a href="index.html">Home</a>
 <a href="shorts.html">Shorts</a>
@@ -25,23 +27,69 @@
 <div class="info-box">
 
 <h2>About Beyond The Limit</h2>
-<p>Streetwear brand built on pushing limits and chasing dreams.</p>
+<p>
+Beyond The Limit is a streetwear brand built on motivation, ambition, and self-belief. It represents people who push beyond limits and continue chasing their dreams despite challenges.
+</p>
+
+<h2>Our Story</h2>
+<p>
+This brand started as a small idea from a first-year college student in Imus, Cavite. It grew from passion for fashion and the desire to inspire others through clothing that represents strength and determination.
+</p>
 
 <h2>Mission</h2>
-<p>To inspire people through fashion.</p>
+<p>
+To inspire individuals to go beyond their limits through fashion and self-expression.
+</p>
 
 <h2>Vision</h2>
-<p>To become a global streetwear brand.</p>
+<p>
+To become a globally recognized streetwear brand representing confidence, faith, and perseverance.
+</p>
 
 <h2>Contact</h2>
-<p>Email: beyondthelimit@gmail.com</p>
+<p>
+Email: beyondthelimit@gmail.com <br>
+Location: Imus, Cavite, Philippines
+</p>
+
+<hr>
+
+<p style="font-style:italic;">
+“I can do all things through Christ who strengthens me.”<br>
+— Philippians 4:13
+</p>
 
 </div>
 
-<footer>
+<h2>Chat With Us</h2>
+
+<div class="chatbox">
+<div class="chat-messages" id="chat"></div>
+
+<input type="text" id="msg" placeholder="Type your message...">
+<button onclick="sendMsg()">Send</button>
+</div>
+
+<p style="text-align:center;">We usually reply as soon as possible!</p>
+
+<footer style="text-align:center;padding:20px;">
 © 2026 BEYOND THE LIMIT <br>
 Owned by Josh Winlance Bulda
 </footer>
 
+<script>
+function sendMsg(){
+let input=document.getElementById("msg");
+let chat=document.getElementById("chat");
+
+if(input.value.trim()!=""){
+chat.innerHTML += "<div>You: " + input.value + "</div>";
+input.value="";
+chat.scrollTop=chat.scrollHeight;
+}
+}
+</script>
+
 </body>
+</html>
 </html>
