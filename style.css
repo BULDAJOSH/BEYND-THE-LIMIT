@@ -18,10 +18,6 @@ color:#e53238;
 font-weight:bold;
 }
 
-.nav-links{
-display:flex;
-}
-
 .nav-links a{
 margin-left:10px;
 text-decoration:none;
@@ -29,9 +25,10 @@ color:#333;
 font-weight:bold;
 }
 
-h1,h2{
-text-align:center;
+.nav-links a:hover{
+color:#6366f1;
 }
+
 
 .products{
 display:grid;
@@ -68,38 +65,44 @@ background:#6366f1;
 color:white;
 }
 
-.cart{
-background:white;
+button:hover{
+background:#4f46e5;
+}
+
+
+.info-box{
+background:rgba(255,255,255,0.9);
 color:black;
-padding:15px;
-margin:20px;
+padding:20px;
 border-radius:10px;
+max-width:800px;
+margin:20px auto;
 }
 
-#notify{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#22c55e;
-color:white;
-padding:10px 15px;
-border-radius:8px;
-display:none;
+
+h1,h2{
+text-align:center;
 }
 
-/* ONLY ADDITION (HAMBURGER MENU) */
+
+footer{
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
 .menu-toggle{
-display:none;
 font-size:26px;
 cursor:pointer;
 color:#333;
+display:none;
+}
+
+.nav-links{
+display:flex;
 }
 
 @media (max-width:768px){
-.menu-toggle{
-display:block;
-}
-
 .nav-links{
 display:none;
 flex-direction:column;
@@ -107,7 +110,7 @@ background:white;
 position:absolute;
 top:60px;
 right:20px;
-width:160px;
+width:150px;
 padding:10px;
 border-radius:10px;
 }
@@ -116,8 +119,12 @@ border-radius:10px;
 margin:10px 0;
 }
 
+.menu-toggle{
+display:block;
+}
+}
+
 .show{
 display:flex !important;
-}
 }
 }
